@@ -1,0 +1,4 @@
+Added a player health system that starts the player at 100 health. When the player collides with an obstacle, 
+10 health is removed. Health is prevented from going below 0, and the system checks when the player's health reaches
+0 so the player can be considered dead. the healthy displayed along with the score. its positions varys on the screens size of 
+the device being played (will be fixed soon)
