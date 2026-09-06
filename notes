@@ -2,3 +2,10 @@ Added a player health system that starts the player at 100 health. When the play
 10 health is removed. Health is prevented from going below 0, and the system checks when the player's health reaches
 0 so the player can be considered dead. the healthy displayed along with the score. its positions varys on the screens size of 
 the device being played (will be fixed soon)
+
+
+
+Added the PlayerDied Observer event and connected it to the Game Over UI. 
+When the player's health reaches 0, the PlayerDied event is fired and the Game Over screen is displayed. T
+he current UI is a temporary transparent screen while the final design is being created in Canva. The completed version will include
+options such as retrying the game or returning to the loading screen.
