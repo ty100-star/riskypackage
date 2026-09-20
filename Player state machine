@@ -1,0 +1,3 @@
+Completed the player's idle, running, and jumping states with transitions based on player movement and input.
+
+The game is in first person, so the player is currently represented by a capsule. The player states and transitions are complete for now.
