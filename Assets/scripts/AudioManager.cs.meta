@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e33b31e3f690442369cd6d305b49ce29
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - coinSound: {fileID: 8300000, guid: 81f6d298ef80343f2b77f576ef985d22, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
