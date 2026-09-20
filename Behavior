@@ -1,0 +1,3 @@
+Completed enemy attack, patrol, and chase transitions and animations.
+
+There are currently three patrol spots. They will not stay in their current positions, but for now, they will work.
