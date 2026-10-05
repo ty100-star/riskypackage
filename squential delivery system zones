@@ -1,0 +1,2 @@
+- added multiple deliver zone locations
+- deliverymanager tracks which location comes next (you cannot skip through the locations you must go in order)
