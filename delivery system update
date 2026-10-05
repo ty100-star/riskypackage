@@ -1,0 +1,6 @@
+delivery system was made and gamemanager score connected now. 
+  - connected compeleted deliveries to game envents 
+  - gamemanagaer updates the score
+  - scoreui displays the updated scores (for both delivieries and coins)
+
+  
