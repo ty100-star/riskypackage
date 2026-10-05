@@ -1,0 +1,2 @@
+- fixed the delivery counter increasing incorrectly
+- ensured deliveries happen in the corrrect order
