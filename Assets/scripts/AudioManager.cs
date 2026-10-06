@@ -11,6 +11,21 @@ public class AudioManager : MonoBehaviour
     // The sound we want to play when a coin is collected.
     public AudioClip coinSound;
 
+    // The sound we want to play when a delivery is completed.
+    public AudioClip deliveryCompleteSound;
+
+    private void OnEnable()
+    {
+        GameEvents.CoinCollected += PlayCoinSound;
+        GameEvents.DeliveryCompleted += PlayDeliveryCompleteSound;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.CoinCollected -= PlayCoinSound;
+        GameEvents.DeliveryCompleted -= PlayDeliveryCompleteSound;
+    }
+
     private void Awake()
     {
         // Check if another AudioManager already exists.
@@ -39,5 +54,11 @@ public class AudioManager : MonoBehaviour
     public void PlayCoinSound()
     {
         PlaySFX(coinSound);
+    }
+
+    // Plays the delivery complete sound.
+    public void PlayDeliveryCompleteSound()
+    {
+        PlaySFX(deliveryCompleteSound);
     }
 }

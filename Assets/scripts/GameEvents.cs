@@ -2,11 +2,16 @@ using System;
 
 public static class GameEvents
 {
-    // This event happens when the player collects a coin.
+    // Coin events
     public static event Action CoinCollected;
 
-    // This event will happen when the player dies.
+    // Delivery events
+    public static event Action DeliveryCompleted;
+
+    // Game events
     public static event Action PlayerDied;
+    public static event Action RoundCompleted;
+
 
     // Tells everyone listening that a coin was collected.
     public static void FireCoinCollected()
@@ -14,9 +19,21 @@ public static class GameEvents
         CoinCollected?.Invoke();
     }
 
+    // Tells everyone listening that a delivery was completed.
+    public static void FireDeliveryCompleted()
+    {
+        DeliveryCompleted?.Invoke();
+    }
+
     // Tells everyone listening that the player died.
     public static void FirePlayerDied()
     {
         PlayerDied?.Invoke();
+    }
+
+    // Tells everyone listening that the round has been completed.
+    public static void FireRoundCompleted()
+    {
+        RoundCompleted?.Invoke();
     }
 }

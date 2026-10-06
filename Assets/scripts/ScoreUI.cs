@@ -7,22 +7,20 @@ public class ScoreUI : MonoBehaviour
 
     private void OnEnable()
     {
-        // Listen for the CoinCollected event.
         GameEvents.CoinCollected += UpdateScoreUI;
+        GameEvents.DeliveryCompleted += UpdateScoreUI;
 
-        // Show the starting score immediately.
         UpdateScoreUI();
     }
 
     private void OnDisable()
     {
-        // Stop listening when this UI is disabled.
         GameEvents.CoinCollected -= UpdateScoreUI;
+        GameEvents.DeliveryCompleted -= UpdateScoreUI;
     }
 
     private void UpdateScoreUI()
     {
-        // Display the score from the GameManager.
         scoreText.text = "Score: " + GameManager.Instance.score;
     }
 }
